@@ -1,0 +1,83 @@
+p {
+    color: gray;
+}
+
+/* Kada vise elemenata imaju isto svojstvo */
+h3, h4 {
+    color: orange;
+}
+
+/* Pristupanje klasi */
+.desno_poravnanje {
+    text-align: right;
+}
+.crveni_text {
+    color: red;
+}
+.drugi, #treci {
+    background-color: yellow;
+}
+
+/* Pristupanje id-u */
+#treci {
+    font-style: italic;
+    border: 2px solid red;
+}
+
+/* Prioritet selektora element < klasa < id < inline < !important */
+li {
+    color: limegreen;
+}
+.stavka {
+    color: blue;
+}
+#prva_stavka {
+    color: orange;
+}
+li {
+    color: rgb(197, 51, 119);
+}
+#cetvrta_stavka {
+    color: purple;
+}
+#peta_stavka {
+    color: rgb(161, 161, 17) !important;
+}
+
+/* Kombinator razmak - svi potomci u div tagu, koji u p tag*/
+div p {
+    color: aquamarine;
+}
+
+/*  Kombinator > - svi potomci u div tagu ciji su direktni potomci (deca) paragrafi */
+div > p {
+    border: 1px solid green;
+}
+
+/* Stilizacija linka */
+a {
+    color: lime;
+    text-decoration: none;
+}
+/* a:link {
+    color: blue;
+} */
+a:visited {
+    color: brown;
+}
+a:hover {
+    background-color: yellow;
+}
+
+/* Pesudo selektori - svaki prvi potomak koji je tipa paragraf*/
+p:first-child {
+    font-weight: bold;
+}
+li:nth-child(3n) {
+    font-weight: bold;
+}
+
+/* Bas treci li */
+li:nth-child(3) {
+    text-decoration: line-through;
+}
